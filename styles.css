@@ -30,3 +30,33 @@ a {
 h1 {
   font-family: "Cormorant Garamond", serif;
 }
+
+.split {
+  display: flex;
+}
+
+.split-left {
+  flex-basis: 50%;
+  margin-right: 25px;
+}
+
+.split-right {
+  flex-basis: 50%;
+  display: flex;
+  justify-content: center;
+}
+
+@media only screen and (max-width: 680px) {
+  .split {
+    flex-wrap: wrap;
+  }
+
+  .split-left,
+  .split-right {
+    flex-basis: 100%;
+  }
+}
+
+.headshot {
+  max-width: 300px;
+}
