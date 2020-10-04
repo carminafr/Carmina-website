@@ -24,7 +24,7 @@ nav {
   font-weight: 400;
 }
 
-nav a:not(.active) {
+header a:not(.active) {
   text-decoration: none;
   font-weight: 300;
 }
