@@ -1,5 +1,8 @@
 body {
   background: #f2f1f0;
+  font-family: "Lato", sans-serif;
+  color: #222;
+  font-weight: 300;
 }
 
 section {
@@ -11,24 +14,68 @@ section {
 header {
   display: flex;
   justify-content: space-between;
+  font-size: 20px;
 }
 
 nav {
   display: flex;
   align-items: center;
+  font-size: 18px;
+  font-weight: 400;
+}
+
+nav a:not(.active) {
+  text-decoration: none;
+  font-weight: 300;
 }
 
 nav a:not(:last-child) {
   margin-right: 20px;
 }
 
-a {
-  color: #000;
-  text-decoration: none;
+nav .fa-linkedin-in {
+  margin-top: 1px;
+  margin-left: 24px;
 }
 
-h1 {
+@media only screen and (max-width: 680px) {
+  header {
+    flex-wrap: wrap;
+  }
+}
+
+a {
+  color: #000;
+}
+
+h1,
+h2,
+h3 {
   font-family: "Cormorant Garamond", serif;
+}
+
+h2 {
+  font-size: 42px;
+}
+
+@media only screen and (max-width: 680px) {
+  h2 {
+    font-size: 40px;
+  }
+}
+
+h3 {
+  font-size: 32px;
+}
+
+p {
+  margin-left: 0;
+  margin-top: 0;
+  line-height: 1.6em;
+}
+
+li {
+  margin-bottom: 12px;
 }
 
 .split {
@@ -59,4 +106,12 @@ h1 {
 
 .headshot {
   max-width: 300px;
+}
+
+.center {
+  text-align: center;
+}
+
+.fa-linkedin-in.large {
+  font-size: 28px;
 }
